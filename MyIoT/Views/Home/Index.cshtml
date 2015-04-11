@@ -7,16 +7,16 @@
     <div class="title row">
         <div class="col-md-12">
             <img src="~/Content/banner2.jpg" alt="" />
-            <h1 class="title">IoT Test Enpoint</h1>
+            <h1 class="title">IoT Enpoint Test</h1>
         </div>
     </div>
     <div class="row">
         <div class="col-md-12">
             <h3>
                 @{ string postUrl = Url.Action("Index", "SensorData", null, this.Request.Url.Scheme);}
-                Post Data To: <strong>@postUrl</strong>
+                Send Data To: <strong>@postUrl</strong>
             </h3>
-            Test your IoT devices by having them send a POST to <em>@postUrl</em> and the raw data will be displayed below
+            Test your IoT devices by having them send a POST or GET to <em>@postUrl</em> and the raw data will be displayed below
         </div>
     </div>
     <div class="dataheader row">
