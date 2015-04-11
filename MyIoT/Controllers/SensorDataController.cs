@@ -11,7 +11,9 @@ namespace MyIoT.Controllers
         public void Index()
         {
             var queryString = HttpContext.Request.RawUrl;
-            queryString = queryString.Substring(queryString.IndexOf('?') + 1);
+            int index = queryString.IndexOf('?');
+            queryString = index > 0 ? queryString.Substring(queryString.IndexOf('?') + 1) : string.Empty;
+
             pushMessage(queryString);
         }
 
