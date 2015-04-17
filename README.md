@@ -1,4 +1,4 @@
-# MyIoT
+# IoT Endpoint Test
 
 A simple web site that receives a POST or GET request and echoes the payload to all connected browsers using SingalR. 
 
